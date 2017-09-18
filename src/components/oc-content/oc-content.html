@@ -1,0 +1,13 @@
+
+
+<div class="url-content">
+  <h3>Content - {{OcContent.name}}</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  <p>{{this.tweets["0"].text}}</p>
+</div>
+<ul>
+  <li *ngFor="let tweet of tweets">
+    {{tweet}}
+  </li>
+</ul>

@@ -11,6 +11,15 @@ export class ServiceStorage {
         storage = $window.localStorage;
     }
 
+    clearStorage() {
+        try {
+            storage.clear();
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+
     setItem(key, item) {
         try {
             storage.setItem(key, JSON.stringify(item));

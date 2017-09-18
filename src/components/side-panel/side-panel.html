@@ -1,0 +1,12 @@
+
+<input type="text" class="" ng-model="Sidepanel.newURL" placeholder="input URL"/>
+<button ng-click="SidePanel.getByUrl(Sidepanel.newURL)">Call RSS</button>
+
+
+      <div class="url-list">
+        <ul>
+            <li ng-repeat="item in SidePanel.urlList" ng-click="SidePanel.alertIt(this.item)">
+                {{item}} <span ng-click="SidePanel.deleteUrl(this.item)" style="color:red">    X</span>
+            </li>
+        </ul>
+      </div>
