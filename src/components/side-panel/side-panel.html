@@ -1,0 +1,14 @@
+
+<input type="text" class="" ng-model="Sidepanel.title" placeholder="Select tweets title"/>
+<button ng-click="SidePanel.setTitle(Sidepanel.title)">Set tweets title</button>
+<hr>
+<input type="text" class="" ng-model="Sidepanel.newURL" placeholder="Select tweets topic"/>
+<button ng-click="SidePanel.getByUrl(Sidepanel.newURL)">Get Tweets</button>
+
+      <div class="url-list">
+        <ul>
+            <li ng-repeat="item in SidePanel.urlList" ng-click="SidePanel.getTweetData(this.item)">
+                {{item}} <span ng-click="SidePanel.deleteUrl(this.item)" style="color:red">    X</span>
+            </li>
+        </ul>
+      </div>

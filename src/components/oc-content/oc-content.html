@@ -1,0 +1,26 @@
+
+
+<div class="url-content">
+  <h1>{{OcContent.title}} </h1>
+  <h3>Content that conclude the word -  {{OcContent.tweetQuery}} </h3>
+
+
+
+</div>
+<ul>
+  <li ng-repeat="tweet in OcContent.tweets" class="tweetBox">
+
+
+      <div class="tweetOwner"> <img class="tweetOwnerImg" ng-src="{{tweet.user.profile_image_url}}" alt=""> user name: {{tweet.user.name}}</div>
+
+
+    <div class="tweetText">
+         {{tweet.text}}
+    </div>
+
+    <div class="tweetDate">
+         {{tweet.created_at}}
+    </div>
+
+  </li>
+</ul>

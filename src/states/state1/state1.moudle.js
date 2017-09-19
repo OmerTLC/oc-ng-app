@@ -11,8 +11,7 @@ function adminConfig($stateProvider) {
     $stateProvider
         .state('state1', {
             url: '/state1',
-            templateUrl: "states/State1/State1.html",
-            controller: 'State1Controller as State1'
+            template: '<oc-app></oc-app>'
         })
 }
 
